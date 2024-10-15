@@ -1,0 +1,14 @@
+html{
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+
+input{
+    background-color: bisque;
+}
+
+h1, h3{
+    text-align: center;
+    font-weight: 100;
+}

@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Meexcellent;
+    src: url('/assets/fonts/mexcellent\ 3d.otf');
+}
+
+div {
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid blue;
+    height: 200px;
+    width: 300px;
+    /* box size will be: width/height + padding + border */
+    box-sizing: content-box;
+    border-radius: 40px;
+    background: linear-gradient(to right, red, yellow, green, blue);
+    box-shadow: 10px 10px 20px 10px black;
+    font-family: Meexcellent;
+    /* 
+        box size will be: width/height - margin 
+        we will usually use this method when we
+        use css to position elements on a website
+    */
+    box-sizing: border-box;
+}
+
+div:hover {
+    animation: spin 3s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        /* Initial state */
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

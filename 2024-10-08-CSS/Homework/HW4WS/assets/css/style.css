@@ -1,0 +1,82 @@
+html,
+body {
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* the place where we shall put everything in */
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1;
+    /* Splits it to 6 columns across the page */
+    grid-template-rows: 2fr 1fr 6fr 1fr;
+    /* to divide the pages rows to 10fr's */
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    /* centers the objects in the middle horizontaly */
+    align-items: center;
+    /* centers the objects verticaly*/
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1;
+    /* splits the main part to the parts of the two pictres and the third one with the form */
+}
+
+main>div,
+.container>*,
+#cat3-plus-form>* {
+    border: solid black 1px;
+}
+
+/* fixing the two pages o the  */
+#cat3-plus-form {
+    display: flex;
+    flex-direction: column;
+    /* the flex recognizes there are two dives inside this ID and splits it in to two in a colum way */
+    height: 100%;
+    /* for the two divs inside to take up the whole space of the main it needs ti be set to height 100% */
+
+}
+
+#cat3-plus-form>* {
+    height: 100%;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* divides the the table to colums for each div we have  */
+}
+
+#form>* {
+    display: flex;
+    justify-content: center;
+    /* centers the objects in the middle horizontaly */
+    align-items: center;
+    /* centers the objects verticaly*/
+    border: solid black 1px;
+}
+
+button {
+    width: 70%;
+    /* adjusts the size */
+    padding: 5px;
+    /* thiccens the button */
+    margin: 5px;
+    /* spaces the button */
+}
+
+textarea {
+    margin: 10px;
+}

@@ -1,0 +1,38 @@
+@font-face{
+    font-family: max;
+    src: url("/assets/fonts/mexcellent 3d.otf")
+}
+
+h1{
+    text-align: center;
+    font-family: max;
+    transition: 2s;
+    transition: 2s;
+}
+h1:hover{
+    color: green;
+    transform: rotate(15deg) scale(3);
+}
+@keyframes MyAnima {
+    from{
+        color:blue;
+        transform: scale(1.5);
+    }
+    to{
+        color: red;
+        transform: scale(0.5);
+    }
+}
+
+p{
+    text-align: center;
+    margin-top: 100px;
+}
+p:hover {
+    animation: MyAnima 3s;
+}
+@media(max-width:500px){
+    h2{
+        font-size: 32px;
+    }
+}

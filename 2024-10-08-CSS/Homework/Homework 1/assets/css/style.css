@@ -1,0 +1,32 @@
+p {
+    margin: 50px;
+    padding: 20px;
+    border: 10px solid black;
+    height: 150px;
+    width: 300px;
+    /* box size will be: content + padding + border */
+    box-sizing: content-box;
+    /* box size will be: width/height - margin
+    we will usually use this method when we use css to grid(to position elements) a website  
+    */
+    /* box-sizing: border-box; */
+
+}
+
+p:nth-child(1) {
+    color: red;
+}
+
+p:nth-child(2) {
+    color: yellow;
+}
+
+p:nth-child(3) {
+    color: green;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

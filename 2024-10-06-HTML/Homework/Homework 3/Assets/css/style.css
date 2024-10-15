@@ -1,0 +1,36 @@
+html{
+    margin: 0px;
+    padding:0px;
+    direction: rtl;
+    text-align: center;
+    background-image: url(/Assets/Images/Animal-shop.jpg) ;
+}
+p{
+    text-align: right;
+    font-size: large;
+}
+#copyrights{
+    text-align: center;
+}
+img{
+    width: 200px;
+    text-align: center;
+}
+h2{
+    direction: ltr;
+    text-align:right;
+}
+h1{
+    text-align:right;
+}
+table{
+
+    border: 2px solid black;
+    margin-right: 0;x   
+}
+a{
+    margin: 0px 30px;
+}
+form{
+    text-align: right;
+}

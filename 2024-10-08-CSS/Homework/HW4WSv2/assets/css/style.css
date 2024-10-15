@@ -1,0 +1,64 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    /* splits the page ot its vertical layer */
+    grid-template-rows: 2fr 1fr 3fr 3fr 1fr;
+    /* splits the page to its horizontal layers */
+}
+
+.container>* {
+    border: solid black;
+}
+
+header {
+    grid-row: 1;
+    /* on the first row */
+    grid-column: 1/ span 3;
+    /* makes the header spread across the whole page horizontally */
+}
+
+nav {
+    grid-row: 2;
+    /* on the second row */
+    grid-column: 1/ span 3;
+    /* span on the 3 fr's */
+}
+
+#cat1 {
+    grid-row: 3/ span 2;
+    /* on the third row, span on tho fr's */
+    grid-column: 1;
+    /* for the first column */
+}
+
+#cat2 {
+    grid-row: 3/ span 2;
+    /* on the third row, span on tho fr's */
+    grid-column: 2;
+    /* for the second column */
+}
+
+#cat3 {
+    grid-row: 3;
+    grid-column: 3;
+    overflow: scroll;
+}
+
+#form {
+    grid-row: 4;
+    grid-column: 3;
+}
+
+footer {
+    grid-row: 5;
+    grid-column: 1/ span 3;
+    /* from the first column span 3 frs */
+}

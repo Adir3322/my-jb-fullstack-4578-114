@@ -1,0 +1,92 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    background-color: salmon;
+}
+
+/* Flexbox for container */
+/* before we start fixing each elemen we would want to give each element(main menu ecs) its GRID values */
+.container {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    /* divides the screen in to 8 equal peices pf row and colums so  i can split later to eachelement */
+    height: 100vh;
+
+}
+
+.container>* {
+    border: solid black;
+    height: 100%;
+}
+
+header,
+footer {
+    grid-column: 1 / span 8;
+    grid-row: span 1;
+
+    /* header and footer aere al ready grided, just need to be given attribues */
+    /* height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
+    border: solid black; */
+}
+
+
+/* Menu aligned to the left */
+nav {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 6;
+    /* header and footer aere al ready grided, just need to be given attribues */
+    /* display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
+    border: solid black;
+    height: auto;
+    width: 20%;
+    height: 50%;
+    padding-top: 10px; */
+}
+
+/* Images and content in main */
+#index-main {
+    grid-column: 3 / span 6;
+    /* span is not until what part it will go, but how many fr`s it will catch */
+    grid-row: 2/ span 6;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    height: 52%;
+    text-align: left;
+    box-sizing: border-box;
+    border: solid black; */
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Ensures paragraph and iframe align properly */
+p {
+    margin-bottom: 20px;
+}
+
+
+/* Image styling */
+img {
+    height: 100px;
+    width: 100px;
+}

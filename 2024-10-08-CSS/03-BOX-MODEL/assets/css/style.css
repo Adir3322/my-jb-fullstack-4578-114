@@ -1,0 +1,14 @@
+div{
+    margin: 50px;
+    padding: 20px;
+    border: 20px solid black;
+    height: 150px;
+    width: 300px;
+    /* box size will be: content + padding + border */
+    box-sizing: content-box;
+    /* box size will be: width/height - margin
+    we will usually use this method when we use css to grid(to position elements) a website  
+    */
+    /* box-sizing: border-box; */
+    
+}

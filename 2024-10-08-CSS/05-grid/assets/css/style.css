@@ -1,0 +1,17 @@
+body>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid black;
+}
+
+body>div>div {
+    font-size: x-large;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: lightpink;
+}
+
+body>div:nth-child(1) {
+    color: grey;
+}

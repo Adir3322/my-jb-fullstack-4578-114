@@ -1,0 +1,46 @@
+
+form{
+    text-align: right;
+}
+html{
+    text-align: center;
+    direction: rtl;
+    background-image: url(/Assets/Images/photo.jpeg) ;
+}
+hr{
+    color: white;
+}
+img{
+    display:flexbox; /* Aligns all images in a row */
+    justify-content: center; /* Centers the images within the parent container */
+    gap: 10px; /* Optional: Adds space between images */
+    width: 120px; /* Set     all images to a uniform width */
+    height: 120px; /* Set all images to a uniform height */
+    object-fit: cover; /* Ensures images maintain aspect ratio and cover the space */
+}
+form{
+    text-align: center;
+}
+h1{
+    color: red;
+}
+input
+{
+    background-color: yellow;
+}
+
+input[type="submit"]{
+    background-color:aqua;
+    }
+
+#copyrights{
+    font: bold;
+}
+
+table{
+    text-align: left;
+    border: 1px solid black; /* Creates a 5px thick solid black frame */
+    padding: 1px; /* Optional: Adds space between the image and the frame */
+    border-radius: 10px; /* Optional: Rounds the corners of the frame */
+}
+

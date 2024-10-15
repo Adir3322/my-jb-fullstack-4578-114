@@ -1,0 +1,57 @@
+div {
+    height: 50px;
+    border: 1px solid black;
+    background-color: green;
+    margin: 10px;
+    /* overflow: scroll; */
+}
+
+p {
+    margin: 0;
+    font-size: x-large;
+    border: 1px solid blue;
+    background-color: #eb3f3f;
+    text-align: center;
+}
+
+/* 1st line */
+div:nth-child(1) {
+    display: flex;
+}
+
+div:nth-child(1)>p {
+    flex: 20%;
+}
+
+/* 2nd line */
+div:nth-child(2) {
+    display: flex;
+}
+
+div:nth-child(2)>p {
+    flex: 1;
+
+}
+
+div:nth-child(2)>p:nth-child(3) {
+    flex: 2;
+}
+
+div:nth-child(2)>p:nth-child(5) {
+    flex: 3;
+}
+
+/* 3rd line */
+div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+
+/* 4th line */
+div:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+    <title>Contact</title>
+    <link rel="stylesheet" href="/Assets/css/style.css">
+</head>
+
+<body>
+    <h1>חנות חיות מגניבה רצח!</h1>
+    <hr>
+    <span>
+        <a href="Home.html">Home</a>|
+        <a href="Animals.html">Animals</a>|
+        <a href="Contact.html">Contact</a>
+    </span>
+
+
+    <form action="save.html" method="GET">
+        <table>
+            <caption>כניסת משתמשים רשומים:</caption>
+            <tr>
+                <td>שם משתמש:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>סיסמה:</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>מין</td>
+                <td>
+                    <input type="radio" id="red" name="color" value="red">
+                    <label for="red">זכר</label><br>
+
+                    <input type="radio" id="green" name="color" value="green">
+                    <label for="green">נקבה</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>עיר</td>
+                <td>
+                    <select id="city">
+                        <option selected="1" disabled="1">Please select city...</option>
+                        <option>תל אביב</option>
+                        <option>פתח תקווה</option>
+                        <option>הרצליה</option>
+                        <option>אשקלון</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>הודעה:</td>
+                <td>
+                    <textarea name="text" id="text"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="שלח">
+                    <button>נקה</button>
+                </td>
+            </tr>
+        </table> 
+    </form>
+
+    <p id="copyrights">כל הזכויות שמורות &copy;</p>
+
+</body>
+
+</html>
