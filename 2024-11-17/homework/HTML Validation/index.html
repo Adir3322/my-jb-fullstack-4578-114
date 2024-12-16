@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/assets/js/app.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <form onsubmit="validation(event)">
+        <input type="text" id="Fname" placeholder="first name" required minlength="2" maxlength="30">
+        <br>
+        <span id="spanFirstName"></span>
+        <br><br>
+
+        <input type="text" id="Lname" placeholder="last name" required minlength="2" maxlength="30">
+        <br>
+        <span id="spanLastName"></span>
+        <br><br>
+
+        <input type="email" id="email" placeholder=" email">
+        <br>
+        <span id="spanEmail"></span>
+        <br><br>
+
+        <input type="number" name="" id="phone" placeholder="phone">
+        <br>
+        <span id="spanNumber"></span>
+        <br><br>
+
+        <textarea name="text" id="text" placeholder="enter text" required minlength="2" maxlength="500"></textarea>
+        <br>
+        <span id="spanText"></span>
+
+        <button type="submit">Do the thing</button>
+    </form>
+</body>
+
+</html>

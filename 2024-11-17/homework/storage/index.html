@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/assets/js/app.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <form>
+        <input type="text" id="city" placeholder="Enter city">
+
+        <input type="text" id="street" placeholder="Enter street">
+
+        <input type="number" id="streetNumber" placeholder="Enter street number">
+
+        <input type="number" id="postalCode" placeholder="Enter zip code">
+        <br>
+        <select id="colorSelect">
+            <option value="white">white</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+            <option value="yellow">yeLlow</option>
+            <option value="pink">pink</option>
+            <option value="gray">gray</option>
+
+        </select>
+        <br>
+        <button type="submit" onclick="saveAddress()">Submit</button>
+        <button type="button" onclick="loadAddress()">Load</button>
+    </form>
+</body>
+
+</html>

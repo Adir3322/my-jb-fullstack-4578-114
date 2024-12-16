@@ -1,0 +1,21 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.redBackground {
+    background-color: red;
+}
+
+.error {
+    background-color: red;
+}
+
+button {
+    height: 20px;
+    width: 100px;
+    background-color: green;
+    color: white;
+}

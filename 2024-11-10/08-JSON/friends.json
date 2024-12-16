@@ -1,0 +1,39 @@
+<friends>
+    <friend id="1">
+        <name>Mira</name>
+        <age>22</age>
+        <city>Petach Tiqwa</city>
+        <gender>female</gender>
+    </friend>
+
+    <friend id =`2`>
+        <name>yoav</name>
+        <age>22</age>
+        <city>Hertzliya</city>
+        <gender>male</gender>
+    </friend>
+
+    <friend id = `3`>
+        <name>chai</name>
+        <age>22</age>
+        <city>netanya</city>
+        <gender>male</gender>
+    </friend>
+</friends>
+
+[
+    {
+        "id": 1,
+        "name": "mira",
+        "age": 22,
+        "city": "Petach Tiqwa",
+        "gender": "female"
+    },
+    {
+        "id": 2,
+        "name": "yoav",
+        "age": 22,
+        "city": "Hertzliya",
+        "gender": "male"
+    },
+]
